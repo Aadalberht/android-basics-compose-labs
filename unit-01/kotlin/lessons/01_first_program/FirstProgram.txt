@@ -1,0 +1,22 @@
+Hello, world!
+Hello, Android!
+Hello, Android!
+Hello, Albert!
+Today is sunny!
+1
+2
+3
+I'm
+learning
+Kotlin!
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Tomorrow is rainy
+There is a chance of snow
+Cloudy
+Partly Cloudy
+Windy
+How's the weather today?
