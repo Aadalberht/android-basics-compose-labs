@@ -1,0 +1,10 @@
+You have 2 unread messages.
+Total: 20
+Total after increment: 21
+Total after decrement: 20
+You have 105 total messages in your inbox.
+Next meeting: January 1 at work
+Say "hello" to Kotlin
+Travel distance: 9.02
+Notifications enabled: true
+You have 9 unread messages.
