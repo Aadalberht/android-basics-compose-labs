@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android Greeting</string>
+    <string name="greeting">Hi, my name is Albert!</string>
+</resources>
