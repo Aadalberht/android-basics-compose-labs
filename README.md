@@ -14,6 +14,8 @@
 - [Настройка Android Studio и устройств](unit-01/SETUP.md).
 - [Прототип итоговой визитки](unit-01/business-card/design.md).
 - [Источники изображений](THIRD_PARTY.md).
+- [Скриншоты шести запущенных приложений](unit-01/evidence/README.md).
+- [Скачать шесть APK](https://github.com/Aadalberht/android-basics-compose-labs/actions/runs/39296610114/artifacts/12208093178).
 
 13 самостоятельных Kotlin-программ: три вводных задания и десять задач практики.
 Шесть Android-приложений: Greeting, Happy Birthday, Compose Article,
