@@ -8,6 +8,10 @@ for project in greeting happy-birthday compose-article task-manager compose-quad
   adb logcat -c
   adb shell am start -W -n "$package/.MainActivity"
   sleep 3
+  if ! adb shell dumpsys activity activities | grep -q "mResumedActivity.*$package"; then
+    echo "The requested app is not in the foreground: $package"
+    exit 1
+  fi
   adb exec-out screencap -p > "$repo_dir/unit-01/evidence/screenshots/$project.png"
   adb shell uiautomator dump /sdcard/window.xml
   adb pull /sdcard/window.xml "$repo_dir/unit-01/evidence/screenshots/$project.xml"
