@@ -5,7 +5,9 @@ fun main() {
     println("Hello, Albert!")
     println("Today is sunny!")
     // Exercises: output order and corrected syntax.
-    println("1"); println("2"); println("3")
+    println("1")
+    println("2")
+    println("3")
     println("I'm\nlearning\nKotlin!")
     println("Monday\nTuesday\nWednesday\nThursday\nFriday")
     println("Tomorrow is rainy")
