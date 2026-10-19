@@ -53,8 +53,13 @@ fun LabTheme(content: @Composable () -> Unit) {
 
 @Composable
 fun App(modifier: Modifier = Modifier) {
-    GreetingText(stringResource(R.string.message), stringResource(R.string.signature),
-        modifier.fillMaxSize().padding(8.dp))
+    Box(modifier.fillMaxSize()) {
+        Image(painterResource(R.drawable.androidparty), contentDescription = null,
+            contentScale = ContentScale.Crop, alpha = 0.5f,
+            modifier = Modifier.fillMaxSize())
+        GreetingText(stringResource(R.string.message), stringResource(R.string.signature),
+            Modifier.fillMaxSize().padding(8.dp))
+    }
 }
 
 @Composable
@@ -63,7 +68,7 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
         Text(message, fontSize = 100.sp, lineHeight = 116.sp,
             textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
         Text(from, fontSize = 36.sp,
-            modifier = Modifier.padding(16.dp).align(Alignment.End))
+            modifier = Modifier.padding(16.dp).align(Alignment.CenterHorizontally))
     }
 }
 
