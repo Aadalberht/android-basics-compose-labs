@@ -4,5 +4,8 @@
 поддерживает кнопки Next/Done на клавиатуре и может округлять результат вверх.
 
 ```sh
-./gradlew assembleDebug lintDebug
+./gradlew assembleDebug lintDebug testDebugUnitTest
 ```
+
+Локальные тесты проверяют обычный и округлённый расчёт. `TipUITests` вводит
+значения в оба поля на Android-устройстве и проверяет сумму в интерфейсе.
