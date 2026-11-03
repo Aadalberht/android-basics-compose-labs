@@ -21,6 +21,16 @@
 Шесть Android-приложений: Greeting, Happy Birthday, Compose Article,
 Task Manager, Compose Quadrant, Business Card.
 
+## Лабораторная №2 — Building app UI
+
+- [Содержание и запуск](unit-02/README.md).
+- [Ответы к трём Quiz](unit-02/QUIZZES.md).
+- [Упражнение с отладчиком](unit-02/dice-roller/DEBUGGER.md).
+
+11 самостоятельных Kotlin-программ: четыре учебных темы и семь задач практики.
+Четыре Android-приложения: Dice Roller, Lemonade, Tip Time и Art Space.
+Tip Time содержит локальные unit-тесты и инструментальный Compose UI-тест.
+
 ## Проверка
 
 ```sh
@@ -32,7 +42,7 @@ python3 scripts/verify-kotlin.py
 Gradle Wrapper включён в каждое приложение.
 
 GitHub Actions автоматически собирает приложения, запускает Android Lint,
-сверяет вывод Kotlin-программ и запускает шесть APK в эмуляторе.
+сверяет вывод Kotlin-программ и запускает APK в эмуляторе.
 Успешный запуск сохраняет APK и скриншоты в артефактах Actions.
 Факт прохождения конкретного запуска указан в `unit-01/VERIFICATION.md`.
 
@@ -44,4 +54,4 @@ git log --oneline --reverse
 
 Исходные задания и дальнейшие изменения видны в истории. Промежуточная текстовая
 версия открытки сохранена перед добавлением фонового изображения.
-Будущие лабораторные можно добавлять как `unit-02/`, `unit-03/` и далее.
+Будущие лабораторные можно добавлять как `unit-03/`, `unit-04/` и далее.
