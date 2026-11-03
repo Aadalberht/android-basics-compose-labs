@@ -1,0 +1,3 @@
+Favorite actor: Sandra Oh. Name length: 9
+No favorite actor selected. Name length: 0
+Uppercase value: UNKNOWN
