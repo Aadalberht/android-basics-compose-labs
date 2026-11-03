@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="sunrise_title">Morning Over the Hills</string>
+    <string name="sunrise_artist">Albert, 2026</string>
+    <string name="sunrise_description">A warm sunrise above green hills</string>
+    <string name="geometry_title">Quiet Geometry</string>
+    <string name="geometry_artist">Albert, 2026</string>
+    <string name="geometry_description">Colorful geometric shapes on a light background</string>
+    <string name="city_title">Night City</string>
+    <string name="city_artist">Albert, 2026</string>
+    <string name="city_description">A city skyline beneath a moonlit sky</string>
+</resources>
