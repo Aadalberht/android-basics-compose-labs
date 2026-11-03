@@ -1,0 +1,4 @@
+The movie ticket price for a person aged 5 is $15.
+The movie ticket price for a person aged 28 is $25.
+The movie ticket price for a person aged 87 is $20.
+Invalid age price: -1
