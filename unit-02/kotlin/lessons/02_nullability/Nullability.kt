@@ -7,11 +7,13 @@ fun actorSummary(name: String?): String {
     }
 }
 
+fun uppercaseOrUnknown(value: String?): String = value?.uppercase() ?: "UNKNOWN"
+
 fun main() {
     var favoriteActor: String? = "Sandra Oh"
     println(actorSummary(favoriteActor))
 
     favoriteActor = null
     println(actorSummary(favoriteActor))
-    println("Uppercase value: ${favoriteActor?.uppercase() ?: "UNKNOWN"}")
+    println("Uppercase value: ${uppercaseOrUnknown(favoriteActor)}")
 }
