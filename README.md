@@ -24,8 +24,11 @@ Task Manager, Compose Quadrant, Business Card.
 ## Лабораторная №2 — Building app UI
 
 - [Содержание и запуск](unit-02/README.md).
+- [Результаты проверки](unit-02/VERIFICATION.md).
 - [Ответы к трём Quiz](unit-02/QUIZZES.md).
 - [Упражнение с отладчиком](unit-02/dice-roller/DEBUGGER.md).
+- [Скриншоты четырёх запущенных приложений](unit-02/evidence/README.md).
+- [Скачать APK](https://github.com/Aadalberht/android-basics-compose-labs/actions/runs/41621286772/artifacts/13223704239).
 
 11 самостоятельных Kotlin-программ: четыре учебных темы и семь задач практики.
 Четыре Android-приложения: Dice Roller, Lemonade, Tip Time и Art Space.
@@ -44,7 +47,8 @@ Gradle Wrapper включён в каждое приложение.
 GitHub Actions автоматически собирает приложения, запускает Android Lint,
 сверяет вывод Kotlin-программ и запускает APK в эмуляторе.
 Успешный запуск сохраняет APK и скриншоты в артефактах Actions.
-Факт прохождения конкретного запуска указан в `unit-01/VERIFICATION.md`.
+Факты прохождения конкретных запусков указаны в `unit-01/VERIFICATION.md` и
+`unit-02/VERIFICATION.md`.
 
 ## Коммиты
 
