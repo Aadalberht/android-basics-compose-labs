@@ -1,0 +1,2 @@
+Item A is sold at 5000.
+Item B is sold at 3000.
