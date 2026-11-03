@@ -1,10 +1,10 @@
-name: Verify Unit 1
+name: Verify Units 1 and 2
 on:
   push:
   pull_request:
   workflow_dispatch:
 concurrency:
-  group: unit-01-${{ github.ref }}
+  group: android-course-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   android:
@@ -22,29 +22,32 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Install Android SDK
         run: sdkmanager 'platforms;android-35' 'build-tools;34.0.0'
-      - name: Build and lint six applications
+      - name: Build lint and test ten applications
         run: ./scripts/build-android.sh
       - name: Enable emulator acceleration
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
-      - name: Launch all six apps and capture their screens
+      - name: Launch all ten apps and run the Tip Time UI test
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
           arch: x86_64
           profile: pixel_2
           disable-animations: true
-          script: ./scripts/smoke-android.sh
+          script: |
+            ./scripts/smoke-android.sh
+            cd unit-02/tip-time
+            ./gradlew --console=plain connectedDebugAndroidTest
       - uses: actions/upload-artifact@v4
         with:
-          name: unit-01-emulator-evidence
-          path: unit-01/evidence/screenshots/
+          name: units-01-02-emulator-evidence
+          path: unit-*/evidence/screenshots/
       - uses: actions/upload-artifact@v4
         with:
-          name: unit-01-debug-apks
-          path: unit-01/*/app/build/outputs/apk/debug/*.apk
+          name: units-01-02-debug-apks
+          path: unit-*/*/app/build/outputs/apk/debug/*.apk
   kotlin:
     runs-on: ubuntu-latest
     steps:
@@ -58,5 +61,5 @@ jobs:
           curl --fail --location --retry 3 https://github.com/JetBrains/kotlin/releases/download/v2.0.21/kotlin-compiler-2.0.21.zip -o /tmp/kotlin.zip
           unzip -q /tmp/kotlin.zip -d /tmp/kotlin
           echo '/tmp/kotlin/kotlinc/bin' >> "$GITHUB_PATH"
-      - name: Run all Kotlin exercises
+      - name: Run all Kotlin exercises from both units
         run: python3 scripts/verify-kotlin.py

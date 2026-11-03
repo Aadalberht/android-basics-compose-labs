@@ -11,11 +11,17 @@ compiler = os.environ.get('KOTLINC') or shutil.which('kotlinc')
 if not compiler:
     sys.exit('Install Kotlin CLI or set KOTLINC to its executable path.')
 java = str(Path(os.environ['JAVA_HOME']) / 'bin/java') if 'JAVA_HOME' in os.environ else 'java'
-sources = sorted((root / 'unit-01/kotlin').rglob('*.kt'))
-output = root / 'unit-01/kotlin/build/verification'
-output.mkdir(parents=True, exist_ok=True)
+sources = sorted(
+    source
+    for kotlin_dir in root.glob('unit-*/kotlin')
+    for source in kotlin_dir.rglob('*.kt')
+)
 for source in sources:
-    jar = output / (source.stem + '.jar')
+    relative = source.relative_to(root)
+    output = root / relative.parts[0] / 'kotlin/build/verification'
+    output.mkdir(parents=True, exist_ok=True)
+    jar_name = '-'.join(relative.with_suffix('').parts[2:]) + '.jar'
+    jar = output / jar_name
     subprocess.run([compiler, str(source), '-include-runtime', '-d', str(jar)], check=True)
     actual = subprocess.run([java, '-jar', str(jar)], check=True, capture_output=True,
                             text=True).stdout
