@@ -38,8 +38,7 @@ jobs:
           disable-animations: true
           script: |
             ./scripts/smoke-android.sh
-            cd unit-02/tip-time
-            ./gradlew --console=plain connectedDebugAndroidTest
+            ./unit-02/tip-time/gradlew --project-dir unit-02/tip-time --console=plain connectedDebugAndroidTest
       - uses: actions/upload-artifact@v4
         with:
           name: units-01-02-emulator-evidence
