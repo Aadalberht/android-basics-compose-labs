@@ -8,11 +8,13 @@ data class Event(
 )
 
 fun main() {
-    val event = Event(
-        title = "Study Kotlin",
-        description = "Commit to studying Kotlin at least 15 minutes per day.",
-        daypart = Daypart.EVENING,
-        durationInMinutes = 15,
+    val events = mutableListOf(
+        Event("Wake up", "Time to get up", Daypart.MORNING, 0),
+        Event("Eat breakfast", daypart = Daypart.MORNING, durationInMinutes = 15),
+        Event("Learn about Kotlin", daypart = Daypart.AFTERNOON, durationInMinutes = 30),
+        Event("Practice Compose", daypart = Daypart.AFTERNOON, durationInMinutes = 60),
+        Event("Watch latest DevBytes video", daypart = Daypart.AFTERNOON, durationInMinutes = 10),
+        Event("Check out latest Android Jetpack library", daypart = Daypart.EVENING, durationInMinutes = 45),
     )
-    println(event)
+    println("Total events: ${events.size}")
 }
