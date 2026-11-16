@@ -1,3 +1,5 @@
+import java.util.Locale
+
 data class Cookie(
     val name: String,
     val softBaked: Boolean,
@@ -18,6 +20,7 @@ fun main() {
     println("Soft baked: ${cookies.filter { it.softBaked }.joinToString { it.name }}")
     val grouped = cookies.groupBy { it.softBaked }
     println("Soft count: ${grouped[true]?.size ?: 0}")
-    println("Total price: $${"%.2f".format(cookies.fold(0.0) { total, cookie -> total + cookie.price })}")
+    val totalPrice = cookies.fold(0.0) { total, cookie -> total + cookie.price }
+    println("Total price: $${String.format(Locale.US, "%.2f", totalPrice)}")
     println("Alphabetical: ${cookies.sortedBy { it.name }.joinToString { it.name }}")
 }
