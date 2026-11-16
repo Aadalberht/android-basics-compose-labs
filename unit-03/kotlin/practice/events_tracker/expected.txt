@@ -1,2 +1,5 @@
 Total events: 6
 You have 5 short events.
+MORNING: 2 events
+AFTERNOON: 3 events
+EVENING: 1 events
