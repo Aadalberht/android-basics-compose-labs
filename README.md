@@ -37,6 +37,8 @@ Tip Time содержит локальные unit-тесты и инструме
 ## Лабораторная №3 — Display lists and use Material Design
 
 - [Содержание и запуск](unit-03/README.md).
+- [Итоговый отчёт](unit-03/REPORT.md).
+- [Результаты проверки](unit-03/VERIFICATION.md).
 - [Ответы к трём Quiz](unit-03/QUIZZES.md).
 - [Проверка доступности Woof](unit-03/woof/ACCESSIBILITY.md).
 
