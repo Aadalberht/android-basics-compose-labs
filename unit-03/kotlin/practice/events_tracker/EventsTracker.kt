@@ -7,6 +7,9 @@ data class Event(
     val durationInMinutes: Int,
 )
 
+val Event.durationOfEvent: String
+    get() = if (durationInMinutes < 60) "short" else "long"
+
 fun main() {
     val events = mutableListOf(
         Event("Wake up", "Time to get up", Daypart.MORNING, 0),
@@ -23,4 +26,5 @@ fun main() {
         println("$daypart: ${dayEvents.size} events")
     }
     println("Last event of the day: ${events.last().title}")
+    println("Duration of first event of the day: ${events.first().durationOfEvent}")
 }
