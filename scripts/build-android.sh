@@ -12,6 +12,11 @@ projects=(
   unit-02/lemonade
   unit-02/tip-time
   unit-02/art-space
+  unit-03/affirmations
+  unit-03/courses
+  unit-03/woof
+  unit-03/superheroes
+  unit-03/thirty-days
 )
 for project in "${projects[@]}"; do
   tasks=(assembleDebug lintDebug testDebugUnitTest)

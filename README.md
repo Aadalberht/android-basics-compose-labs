@@ -34,6 +34,16 @@ Task Manager, Compose Quadrant, Business Card.
 Четыре Android-приложения: Dice Roller, Lemonade, Tip Time и Art Space.
 Tip Time содержит локальные unit-тесты и инструментальный Compose UI-тест.
 
+## Лабораторная №3 — Display lists and use Material Design
+
+- [Содержание и запуск](unit-03/README.md).
+- [Ответы к трём Quiz](unit-03/QUIZZES.md).
+- [Проверка доступности Woof](unit-03/woof/ACCESSIBILITY.md).
+
+Четыре самостоятельные Kotlin-программы: три учебные темы и итоговая практика
+Events Tracker из семи последовательных этапов. Пять Android-приложений:
+Affirmations, Courses, Woof, Superheroes и оригинальный проект 30 Days of Focus.
+
 ## Проверка
 
 ```sh

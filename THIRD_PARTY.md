@@ -1,7 +1,7 @@
 # Источники и сторонние материалы
 
 Задания и спецификации интерфейсов:
-[Google Android Basics with Compose, Units 1 and 2](https://developer.android.com/courses/android-basics-compose/course).
+[Google Android Basics with Compose, Units 1–3](https://developer.android.com/courses/android-basics-compose/course).
 Учебные примеры переработаны для самостоятельных запускаемых проектов.
 Условия публикации материалов Google: [Content License](https://developer.android.com/license).
 
@@ -13,9 +13,15 @@
 - `dice_1.xml` … `dice_6.xml`: [Dice Roller training project](https://github.com/google-developer-training/basic-android-kotlin-compose-training-dice-roller).
 - `lemon_tree.xml`, `lemon_squeeze.xml`, `lemon_drink.xml`, `lemon_restart.xml`:
   [Lemonade training project](https://github.com/google-developer-training/basic-android-kotlin-compose-training-lemonade).
+- фотографии Affirmations: [Affirmations training project](https://github.com/google-developer-training/basic-android-kotlin-compose-training-affirmations).
+- изображения тем Courses: [Courses training project](https://github.com/google-developer-training/basic-android-kotlin-compose-training-courses).
+- фотографии собак и шрифты Woof: [Woof training project](https://github.com/google-developer-training/basic-android-kotlin-compose-training-woof), см. также `unit-03/woof/ASSETS_LICENSE.txt`.
+- векторные изображения и шрифты Superheroes: [Superheroes training project](https://github.com/google-developer-training/basic-android-kotlin-compose-training-superheroes), см. также `unit-03/superheroes/ASSETS_LICENSE.txt`.
 
 Три изображения Art Space созданы специально для этой лабораторной как
 векторные XML-ресурсы и не используют сторонние изображения.
+Иллюстрация `focus_landscape.xml` и все 30 текстов итогового приложения
+Thirty Days созданы специально для лабораторной №3.
 
 Android robot: создан и опубликован Google; используется по условиям
 [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/).
