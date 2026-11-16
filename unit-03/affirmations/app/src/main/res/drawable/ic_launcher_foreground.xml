@@ -41,9 +41,9 @@
         android:fillColor="#fff"/>
     <path
         android:pathData="M49.123,76.698l0,0a0,0 0,0 1,0 0l0,0A18.31,18.31 75,0 1,24.111 83.399l0,0a0,0 0,0 1,0 0l0,0A18.31,18.31 75,0 1,49.123 76.698Z"
-        android:fillColor="#00e676"/>
+        android:fillColor="#FFD8B4FE"/>
     <path
         android:pathData="M83.61,83.39h0a18.32,18.32 0,0 0,-25 -6.7h0a18.32,18.32 0,0 0,25 6.7Z"
-        android:fillColor="#00e676"/>
+        android:fillColor="#FFD8B4FE"/>
   </group>
 </vector>
