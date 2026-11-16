@@ -5,6 +5,11 @@ repo_dir="$(cd "$(dirname "$0")/.." && pwd)"
 staging_dir="${RUNNER_TEMP:-/tmp}/android-lab-apks"
 gradle_home="${GRADLE_USER_HOME:-$HOME/.gradle}"
 
+while IFS= read -r wrapper; do
+  "$wrapper" --stop >/dev/null 2>&1 || true
+done < <(find "$repo_dir/unit-01" "$repo_dir/unit-02" "$repo_dir/unit-03" \
+  -name gradlew -type f | sort)
+
 rm -rf "$staging_dir"
 mkdir -p "$staging_dir"
 
