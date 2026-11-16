@@ -1,0 +1,9 @@
+Menu item: Chocolate Chip
+Menu item: Banana Walnut
+Menu item: Vanilla Creme
+Menu item: Chocolate Peanut Butter
+Menu item: Snickerdoodle
+Soft baked: Banana Walnut, Snickerdoodle
+Soft count: 2
+Total price: $7.65
+Alphabetical: Banana Walnut, Chocolate Chip, Chocolate Peanut Butter, Snickerdoodle, Vanilla Creme
