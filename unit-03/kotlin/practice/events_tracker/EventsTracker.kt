@@ -22,4 +22,5 @@ fun main() {
     events.groupBy { it.daypart }.forEach { (daypart, dayEvents) ->
         println("$daypart: ${dayEvents.size} events")
     }
+    println("Last event of the day: ${events.last().title}")
 }

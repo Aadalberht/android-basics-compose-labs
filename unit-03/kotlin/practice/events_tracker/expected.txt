@@ -3,3 +3,4 @@ You have 5 short events.
 MORNING: 2 events
 AFTERNOON: 3 events
 EVENING: 1 events
+Last event of the day: Check out latest Android Jetpack library
