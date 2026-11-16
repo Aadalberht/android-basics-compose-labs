@@ -35,6 +35,7 @@ jobs:
           api-level: 29
           arch: x86_64
           profile: pixel_2
+          disk-size: 2G
           disable-animations: true
           script: |
             ./scripts/smoke-android.sh
