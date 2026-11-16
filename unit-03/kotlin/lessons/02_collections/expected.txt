@@ -1,0 +1,5 @@
+Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+true
+Unique planets: 8
+Earth has 1 moon
+Tracked planets: Earth, Jupiter, Saturn
