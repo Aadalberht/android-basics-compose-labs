@@ -177,7 +177,10 @@ private fun DogItemButton(
     ) {
         Icon(
             imageVector = Icons.Filled.ExpandMore,
-            contentDescription = stringResource(R.string.expand_button_content_description),
+            contentDescription = stringResource(
+                if (expanded) R.string.collapse_button_content_description
+                else R.string.expand_button_content_description
+            ),
             tint = MaterialTheme.colorScheme.secondary,
             modifier = Modifier.rotate(rotation)
         )
