@@ -21,8 +21,8 @@ val Quiz.StudentProgress.progressText: String
     get() = "$answered of $total answered"
 
 fun Quiz.StudentProgress.printProgressBar() {
-    repeat(answered) { print("▓") }
-    repeat(total - answered) { print("▒") }
+    repeat(answered) { print("#") }
+    repeat(total - answered) { print("-") }
     println()
     println(progressText)
 }
